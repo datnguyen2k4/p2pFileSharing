@@ -1,0 +1,6 @@
+node_modules
+
+# Ignore the file /src/peer except .ts
+/src/peer/* 
+!src/peer/*.ts
+!src/peer/*.mjs

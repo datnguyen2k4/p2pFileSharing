@@ -1,0 +1,44 @@
+{
+  "name": "p2p_filesharing",
+  "version": "1.0.0",
+  "scripts": {
+    "tracker_test": "nodemon src/tracker/tracker.ts",
+    "tracker": "ts-node src/tracker/tracker.ts",
+    "peer_test": "nodemon src/peer/peer.ts",
+    "peer": "ts-node src/peer/peer.ts",
+    "test": "nodemon src/peer/test.ts",
+    "build": "tsc && git commit -am 'build' && git push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bencode": "^2.0.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "net": "^1.0.2",
+    "pg": "^8.13.0",
+    "progress": "^2.0.3",
+    "socket.io": "^4.8.0",
+    "socket.io-client": "^4.8.0",
+    "webtorrent": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/bencode": "^2.0.4",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.1",
+    "@types/pg": "^8.11.10",
+    "@types/progress": "^2.0.7",
+    "@types/webtorrent": "^0.109.9",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "main": "index.js"
+}
